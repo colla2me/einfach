@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+  <style type="text/css">
+    #canvas {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="canvas"></canvas>
+  <script>
+    const el = document.getElementById("canvas");
+    const app = el.getContext("2d");
+
+    app.fillStyle = "red";
+    app.fillRect(0, 0, 300, 300);
+
+
+  </script>
+</body>
+</html>
